@@ -1,4 +1,7 @@
 # team46
+This webapp was created for CSC309 Winter 2022.
+
+It was created with 3 other teammates, junaidquraishi, waynezhu6, and hamidahmed.
 
 ## Libraries used
 
