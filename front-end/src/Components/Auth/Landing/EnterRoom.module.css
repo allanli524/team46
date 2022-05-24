@@ -1,0 +1,172 @@
+.body {
+	width: 100%;
+	height: 100%;
+	background-color: #f9fafe;
+}
+
+.enter_room {
+	/* background-color: whitesmoke;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+	color: black; */
+
+	width: 600px;
+	margin: auto;
+	transform: translateY(48px);
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+	padding: 30px;
+}
+
+.enter_room_header {
+	background-color: white;
+	width: 100vw;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-end;
+	align-items: center;
+	flex-shrink: 0;
+	overflow: hidden;
+}
+
+.enter_room_content_wrapper {
+	width: 100%;
+	height: calc(100% - 80px);
+	/* display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center; */
+}
+
+.enter_room_form {
+	width: 640px;
+	height: 380px;
+	min-width: 360px;
+	min-height: 210px;
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 0 0 10px -4px black;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.form_title {
+	/* font-size: 2.3rem;
+	font-weight: 600;
+	color: black; */
+
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form_description {
+	font-size: 18px;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+#alias_input,
+#room_tag_input {
+	/* background-color: whitesmoke;
+	width: calc(80% - 32px);
+	height: calc(60px - 22px);
+	padding: 10px 15px;
+	margin: 20px 0;
+	border: 1px solid black;
+	border-radius: 15px;
+	flex-shrink: 0;
+	outline: none;
+	resize: none;
+	color: black;
+	font-size: 1.2rem;
+	transition: all 100ms; */
+
+	margin-top: 16px;
+	width: 100%;
+	padding: 8px 16px 8px 16px;
+	font-size: 16px;
+	outline: #96edf3;
+	background-color: #fbfbfc;
+	border-radius: 8px;
+	border: 1px solid #e2e5eb;
+}
+
+#join_room_submit {
+	/* background-color: whitesmoke;
+	width: 40%;
+	height: 50px;
+	margin-top: auto;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	border-radius: 15px;
+	flex-shrink: 0;
+	outline: none;
+	resize: none;
+	color: black;
+	font-size: 1.8rem;
+	font-weight: 400;
+	transition: all 100ms; */
+
+	background-color: #0a6cff;
+	margin-top: 20px;
+	color: #faf9f9;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+
+	border-radius: 8px;
+	outline: none;
+	padding: 8px 16px 8px 16px;
+}
+
+/* #join_room_submit:hover {
+	box-shadow: 0 0 10px -4px black;
+	cursor: pointer;
+	font-size: 2rem;
+} */
+
+.enter_room_header_item {
+	margin-right: 32px;
+	margin-left: 8px;
+	font-size: min(2rem, 3vw);
+	font-weight: 700;
+	color: #5a5a5a;
+}
+
+.logout {
+	margin-right: auto;
+	margin-left: 32px;
+	color: #5a5a5a;
+	font-weight: bold;
+	transition: all 200ms;
+	cursor: pointer;
+}
+.logout:hover {
+	transform: scale(105%);
+}
+
+.profile {
+	color: #5a5a5a;
+	font-weight: bold;
+	transition: all 200ms;
+	cursor: pointer;
+}
+.profile:hover {
+	transform: scale(105%);
+}

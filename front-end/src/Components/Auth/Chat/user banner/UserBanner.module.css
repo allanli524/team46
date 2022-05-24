@@ -1,0 +1,91 @@
+.user_banner {
+	width: 100%;
+	padding: 5px 20px;
+	font-size: min(1.4rem, 3vw);
+	font-weight: 400;
+	color: #464646;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding: 8px 16px;
+
+	cursor: pointer;
+	/* border-bottom: 1px solid rgba(166,173,201,.4);; */
+}
+.user_banner:hover {
+	background-color: #f9f9f9;
+}
+
+.user_banner:hover .banner_at {
+	text-decoration: none;
+}
+
+.banner_menu_icon {
+	margin-left: auto;
+	margin-top: 4px;
+}
+.banner_menu_icon:hover {
+	cursor: pointer;
+}
+
+.profile_img {
+	background-color: #0086A6;
+	width: 48px;
+	min-width: 48px;
+	height: 48px;
+	border-radius: 48px;
+	border: 1px solid rgba(166, 173, 201, 0.4);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  align-content: center;
+  align-items: center;
+	text-align: center;
+	overflow: hidden;
+	margin-right: 16px;
+}
+.profile_name {
+	font-weight: 700;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  align-content: center;
+  align-items: center;
+	text-align: center;
+}
+
+.profile_img img {
+	width: 100%;
+}
+
+.user_container {
+	position: relative;
+	width: calc(100% - calc(48px + 16px));
+	flex-grow: 0;
+}
+
+.user_title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.user_last_message {
+	font-size: 16px;
+	color: #5a5a5a;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.waiting {
+	background-image: linear-gradient(90deg, #ff000045, transparent);
+	padding: 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+}

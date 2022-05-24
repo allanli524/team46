@@ -1,0 +1,72 @@
+.landing-page {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.landing-banner {
+	width: 50%;
+	min-width: 460px;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+}
+
+.landing-banner-title {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing-link-button {
+	width: auto;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin: 16px 16px 16px 0px;
+	padding: 0px 30px;
+
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+
+	color: black;
+	text-decoration: none;
+}
+.landing-link-button:hover {
+	background-color: whitesmoke;
+	border: 1px solid black;
+}
+
+.landing-info {
+	width: 40%;
+	min-width: 415px;
+	height: 50%;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 80px;
+	line-height: 4rem;
+
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+}

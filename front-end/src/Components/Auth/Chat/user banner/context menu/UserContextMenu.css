@@ -1,0 +1,66 @@
+.user-context-menu {
+	background-color: white;
+	position: absolute;
+	min-width: 100px;
+	width: 120px;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px 5px;
+	z-index: 5;
+	user-select: none;
+	font-size: 1rem;
+	font-weight: 300;
+	color: black;
+}
+
+.context-item {
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+.context-item:not(:last-child) {
+	margin-bottom: 5px;
+}
+.context-item:first-child:hover {
+	background-color: rgba(255, 0, 0, 0.356);
+	cursor: pointer;
+}
+.context-item:hover {
+	background-color: whitesmoke;
+	cursor: pointer;
+}
+
+.report-items {
+	background-color: white;
+	position: absolute;
+	min-width: 100px;
+	width: 140px;
+	top: 10px;
+	left: 110px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px 5px;
+	z-index: 5;
+	user-select: none;
+	font-size: 1rem;
+	font-weight: 300;
+	color: black;
+}
+.report-items.false {
+	display: none;
+}
+.report-items.true {
+	display: inline;
+}
+
+.report-item {
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+.report-item:not(:last-child) {
+	margin-bottom: 5px;
+}
+.report-item:hover {
+	background-color: rgba(255, 0, 0, 0.356);
+	cursor: pointer;
+}

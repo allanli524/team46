@@ -1,0 +1,222 @@
+.public_chat {
+	background-color: #f9fafe;
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+	color: black;
+}
+
+.chat_header {
+	background-color: white;
+	width: 100vw;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.chat_title {
+	/* margin-left: calc(200px - min(2rem, 3vw)); */
+	font-size: min(2.5rem, 3vw);
+	font-weight: 700;
+	color: #5a5a5a;
+	transition: all 200ms;
+}
+
+.chat_exit_icon {
+	margin-left: 12px;
+	font-size: min(2rem, 3vw);
+	font-weight: 700;
+	color: #5a5a5a;
+	transition: all 150ms;
+}
+/* .chat_exit_icon:hover {
+	cursor: pointer;
+	font-size: min(2.5rem, 3.5vw);
+}
+.chat_exit_icon:hover + .chat_title {
+	margin-left: calc(200px - min(2.5rem, 3.5vw));
+} */
+
+.chat_wrapper {
+	background-color: #f9fafe;
+	min-width: 100vw;
+	height: calc(100% - 80px);
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-shrink: 0;
+}
+
+.chat_side_panel {
+	/* background-color: #5a5a5a; */
+	width: 300px;
+	height: calc(100% - 32px);
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	overflow-y: auto;
+	flex-shrink: 0;
+
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+	/* padding: 30px; */
+	margin: 16px;
+}
+
+.chat_view {
+	background-color: #f9fafe;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	flex-grow: 1;
+	z-index: 2;
+}
+
+.chat_header_leave {
+	padding-left: 32px;
+	vertical-align: bottom;
+	font-size: 18px;
+	font-weight: bold;
+	color: #5a5a5a;
+	transition: all 150ms;
+	width: 348px;
+	cursor: pointer;
+}
+
+.chat_header_leave:hover {
+	transform: scale(105%);
+}
+
+.chat_invites {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+	user-select: none;
+
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 -10px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+}
+
+.cycle_invites {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.remove_invite_icon {
+	width: 22px;
+	height: 22px;
+	color: rgba(128, 128, 128, 0.29);
+}
+.remove_invite_icon:hover {
+	color: rgba(0, 0, 0, 0.69);
+	cursor: pointer;
+}
+.remove_invite {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	top: 2px;
+	left: 10px;
+	color: rgba(128, 128, 128, 0.29);
+	z-index: 10;
+}
+.remove_invite:hover {
+	color: rgba(0, 0, 0, 0.69);
+	cursor: pointer;
+}
+
+.cycle_back,
+.cycle_forward {
+	background-color: rgba(128, 128, 128, 0.1);
+	margin: 0px 10px;
+	margin-top: 15px;
+	width: 20px;
+	height: 35px;
+}
+.cycle_back:hover,
+.cycle_forward:hover {
+	background-color: rgba(128, 128, 128, 0.39);
+	cursor: pointer;
+}
+
+.invite_alias {
+	width: 70%;
+	height: 30px;
+	margin-top: 10px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: black;
+}
+.invite_menu {
+	width: 70%;
+	height: calc(100% - 40px);
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 10;
+}
+
+.accept_invite,
+.decline_invite {
+	background-color: whitesmoke;
+	height: calc(35px - 4px);
+	width: calc(110px - 30px);
+	padding: 2px 15px;
+	font-size: 1rem;
+	font-weight: 400;
+	color: black;
+	border-radius: 10px;
+	box-shadow: 0 -10px 10px rgba(154, 160, 185, 0.1), 0 15px 40px rgba(166, 173, 201, 0.4);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.accept_invite:hover,
+.decline_invite:hover {
+	font-size: 1.1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.accept_invite {
+	background-color: rgb(156, 252, 156);
+}
+.decline_invite {
+	background-color: rgb(252, 159, 159);
+}
