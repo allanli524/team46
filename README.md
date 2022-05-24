@@ -1,7 +1,10 @@
 # team46
-This webapp was created for CSC309 Winter 2022.
-
-It was created with 3 other teammates, junaidquraishi, waynezhu6, and hamidahmed.
+This MERN stack webapp was created for CSC309 Winter 2022. It offers users the ability to anonymously chat with like-minds online regarding their topics of interest. It was created with 3 other teammates, junaidquraishi, waynezhu6, and hamidahmed. 
+Some feature that we are proud of:
+- user profile creation and update changes with error checking
+- live chat created using socket.io
+- user information state storage with Redux
+- user authentication and password encyption with salt
 
 ## Libraries used
 
